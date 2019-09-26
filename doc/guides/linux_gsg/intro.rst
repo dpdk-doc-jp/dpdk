@@ -1,36 +1,38 @@
 ..  SPDX-License-Identifier: BSD-3-Clause
     Copyright(c) 2010-2014 Intel Corporation.
 
-Introduction
-============
+はじめに
+========
 
-This document contains instructions for installing and configuring the Data Plane Development Kit (DPDK) software.
-It is designed to get customers up and running quickly.
-The document describes how to compile and run a DPDK application in a Linux application (linux) environment,
-without going deeply into detail.
+このドキュメントではData Plane Development Kit (DPDK)のインストールおよび設定に関して
+説明します。
 
-Documentation Roadmap
----------------------
+Linux上でDPDKをどのようにコンパイルし、アプリケーションをどのように動作させるのかについて、
+DPDK自体の詳細には踏み込む事無く簡単に述べます。
 
-The following is a list of DPDK documents in the suggested reading order:
 
-*   Release Notes: Provides release-specific information, including supported features, limitations, fixed issues, known issues and so on.
-    Also, provides the answers to frequently asked questions in FAQ format.
+ドキュメントの読み進め方について
+--------------------------------
 
-*   Getting Started Guide (this document): Describes how to install and configure the DPDK; designed to get users up and running quickly with the software.
+このドキュメントを含む全体を通して、以下の順序で読み進めることを推奨します。
 
-*   Programmer's Guide: Describes:
+* リリースノート: それぞれのリリースバージョンに特有の情報、例えば追加機能や制限事項、
+  修正された問題などの他、FAQが含まれます。
 
-    *   The software architecture and how to use it (through examples), specifically in a Linux application (linux) environment
+* Getting Started Guide (このドキュメント): DPDKのインストールおよび設定、動作方法について
+  完結に記述されています。
 
-    *   The content of the DPDK, the build system (including the commands that can be used in the root DPDK Makefile to build the development kit and
-        an application) and guidelines for porting an application
+* プログラマーズガイド: 以下の内容に加え、語彙集が含まれています。
 
-    *   Optimizations used in the software and those that should be considered for new development
+  * アプリケーション(Examplesを含む)のソフトウェアアーキテクチャと使用方法(Linux向け)。
 
-    A glossary of terms is also provided.
+  * DPDKのビルドシステム(makeで利用可能なコマンド)や、アプリケーションをポーティングする際の
+    ガイドラインなど。
 
-*   API Reference: Provides detailed information about DPDK functions, data structures and other programming constructs.
+  * ソフトウェアでの最適化方法。
 
-*   Sample Applications User Guide: Describes a set of sample applications.
-    Each chapter describes a sample application that showcases specific functionality and provides instructions on how to compile, run and use the sample application.
+* APIリファレンス: DPDKの各種機能やデータ構造などに関する詳細な説明が含まれています。
+
+* Sample Applications User Guide: サンプルアプリケーションに関して説明します。
+  サンプルアプリケーションはそれぞれDPDKの各種機能を用いた実用例として実装されており、
+  このドキュメントではアプリケーションのコンパイルや使用方法について説明しています。
